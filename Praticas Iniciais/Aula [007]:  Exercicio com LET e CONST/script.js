@@ -7,7 +7,14 @@ const nome = "Vitor";
 const sobrenome = "Vargas Cardoso"
 const idade = 18;
 const peso = 70.5;
-const altura = 1.76;
+const alturaEmM = 1.76;
 
-let IMC;
+let indiceMassaCorporal;
 let anoNascimento;
+
+anoNascimento  = 2023 - idade;
+indiceMassaCorporal = peso / (alturaEmM * alturaEmM);
+
+// console.log(nome + " " + sobrenome + " tem " + idade +  " anos, pesa " + peso + " e tem " + alturaEmM + " de altura. \nSeu IMC é: "+indiceMassaCorporal); 
+// Template String: Recomendado
+console.log(`${nome} ${sobrenome} tem ${idade} anos e pesa ${peso} e tem ${alturaEmM} de altura. \nSeu IMC é: ${indiceMassaCorporal}`)
