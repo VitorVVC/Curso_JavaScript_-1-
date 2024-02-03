@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-grid{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.form{
+}
+.form p{
+    padding: 10px;
+}
+.form-content{
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-content label{
+    display: block;
+}
+
+.form div button{
+    background-color: red;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.resultado p{
+    background-color: aquamarine;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
