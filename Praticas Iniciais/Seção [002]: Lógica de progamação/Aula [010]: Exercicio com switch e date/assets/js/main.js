@@ -1,3 +1,4 @@
+// Solução "CRUA" onde das tres é a "pior", pois passa de 50 linhas de código, e pode ser muito melhor feita, como veremos a seguir
 const noReadingDocumentation = () => {
     const h1 = document.querySelector('.container h1');
     const data = new Date();
@@ -74,6 +75,7 @@ const noReadingDocumentation = () => {
 
 // noReadingDocumentation();
 
+// "Melhor" solucão, onde usamos oque a linguagem nos fornece de melhor para estarmos trabalhando e não precisarmos ter de criar soluções mais "rústicas".
 const readingDocumentation = () => {
     const h1 = document.querySelector('.container h1');
     const data = new Date();
@@ -88,6 +90,8 @@ const readingDocumentation = () => {
 
 readingDocumentation();
 
+
+// Solução encima da noReadingDocumentation, porém sem switch case, já que toma diversas linhas de código.
 const noReadingDocumentationWithoutSwitch = () => {
     const h1 = document.querySelector('.container h1');
     const data = new Date();
