@@ -11,16 +11,12 @@ const main = (num) => {
     const check = () => {
         return typeof num == 'number' ? num : 0;
     }
+    check(num);
     const numName = () => {
-        if (num % 3 === 0 && num % 5 === 0) {
-            return 'FizzBuzz'
-        } else if (num % 3 === 0) {
-            return 'Fizz';
-        } else if (num % 5 === 0) {
-            return 'Buzz';
-        } else {
-            return num;
-        }
+        if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+        if (num % 3 === 0) return 'Fizz';
+        if (num % 5 === 0) return 'Buzz';
+        return num;
     }
     return numName();
 }
